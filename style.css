@@ -104,21 +104,14 @@ button[type="submit"]:hover {
 	text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-	form {
-		flex-direction: column;
-		align-items: stretch;
+@media only screen and (max-width: 600px) {
+	.container {
+		max-width: 100%;
+		padding: 10px;
 	}
-	.input-group {
-		margin-right: 0;
-		margin-bottom: 20px;
-	}
-	.input-group label {
-		margin-right: 0;
-		margin-bottom: 5px;
-	}
-	.input-group select,
-	.input-group input[type="text"] {
-		width: 100%;
+	input[type="text"], select, button {
+		font-size: 16px;
+		padding: 8px;
+		margin: 5px 0;
 	}
 }
