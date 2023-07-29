@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="images/currency.png" alt="Currency Converter">
+			<h1>Currency Converter</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<form>
+				<div class="input-group">
+					<label for="from">From:</label>
+					<select id="from" name="from">
+						<option value="USD">USD</option>
+						<option value="HKD">HKD</option>
+						<option value="TWD">TWD</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label for="to">To:</label>
+					<select id="to" name="to">
+						<option value="USD">USD</option>
+						<option value="HKD">HKD</option>
+						<option value="TWD">TWD</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<label for="amount">Amount:</label>
+					<input type="text" id="amount" name="amount" placeholder="Enter amount">
+				</div>
+				<button type="submit" id="convert">Convert</button>
+			</form>
+			<div id="result"></div>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
