@@ -17,7 +17,7 @@ $(document).ready(function() {
 			success: function(data) {
 				var rate = data['exchange_rate'];
 				var result = parseFloat(amount) * rate;
-				$('#result').html(amount + ' ' + from + ' = ' + result.toFixed(2) + ' ' + to);
+				$('#result').html(amount + ' ' + from + ' = ' + result.toFixed(4) + ' ' + to);
 			},
 			error: function() {
 				$('#result').html('Error: API request failed');
