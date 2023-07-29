@@ -101,7 +101,7 @@ button[type="submit"]:hover {
 
 @media (max-width: 720px) {
 	.input-group {
-		flex-basis: 50%;
+		flex-basis: 100%;
 		margin-right: 0;
 	}
 }
