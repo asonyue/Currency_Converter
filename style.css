@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-	max-width: 600px;
+	max-width: 50%;
 	margin: 0 auto;
 	padding: 20px;
 }
@@ -34,24 +34,19 @@ header h1 {
 
 form {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
 	margin-top: 20px;
 }
 
 .input-group {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	flex: 1;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
 
 .input-group label {
 	display: block;
-	margin-right: 10px;
+	margin-bottom: 5px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #333;
@@ -60,7 +55,7 @@ form {
 .input-group select,
 .input-group input[type="text"] {
 	display: block;
-	width: 120px;
+	width: 100%;
 	padding: 10px;
 	font-size: 16px;
 	border: 2px solid #ccc;
@@ -104,14 +99,9 @@ button[type="submit"]:hover {
 	text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-	.container {
-		max-width: 100%;
-		padding: 10px;
-	}
-	input[type="text"], select, button {
-		font-size: 16px;
-		padding: 8px;
-		margin: 5px 0;
+@media (max-width: 720px) {
+	.input-group {
+		flex-basis: 50%;
+		margin-right: 0;
 	}
 }
